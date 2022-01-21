@@ -1,7 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .header_nav {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header_nav {
+  background-color: #15FFBC;
+}
+.header_nav a {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  align-content: center;
+}
+.header_nav .header_nav-logo {
+  justify-content: center;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=syle.css.map */
