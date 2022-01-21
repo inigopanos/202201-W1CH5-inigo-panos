@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/inigopanos/202201-W1CH5-inigo-panos#readme",
   "devDependencies": {
+    "husky": "^7.0.4",
     "sass": "^1.49.0"
   }
 }
