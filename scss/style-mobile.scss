@@ -107,6 +107,7 @@ video{
         display: flex;
         flex-direction: column;
         gap: 10px 20px;
+        
         background-color: #15FFBC;
 
         & .main_section-h2{
@@ -168,7 +169,7 @@ video{
         & :nth-child(2n+1)
         {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 2rem;
             letter-spacing: 4px;
             text-transform: uppercase;
         }
@@ -233,7 +234,7 @@ video{
         }
 
         .footer_nav_box{
-            display: flex;
+            
             margin-top: 40px    ;
             flex-direction: column;
 
@@ -262,7 +263,7 @@ video{
                 align-items: center;
                 display: flex;
 
-                font-size: small;
+                
                 text-transform: none;
                 letter-spacing: 5px;
             }
@@ -357,8 +358,11 @@ video{
             flex-direction: row;
             justify-content: center;
             text-align: center;
-            gap: 40px;
         }
-    }
 
+       .footer > ul{
+           display: none;
+           background-color: yellow;
+       }
+    }
 }
