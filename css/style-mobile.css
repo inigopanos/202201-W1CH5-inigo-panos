@@ -13,7 +13,7 @@
   background-color: #15FFBC;
 }
 
-.main_nav_car_image {
+.content-image {
   width: 100%;
 }
 
@@ -110,17 +110,31 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
+  margin-bottom: 30px;
   font-family: "Open-sans", sans-serif;
 }
 .main_section .main_section_bottom-texts-container :nth-child(2n+1) {
   font-weight: bold;
+  font-size: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 .main_section .main_section_bottom-texts-container :nth-child(2n) {
   text-decoration: underline;
   letter-spacing: 3px;
+}
+.main_section .main_div_cover-letter {
+  margin-top: 40px;
+}
+.main_section .main_div_cover-letter-text {
+  letter-spacing: 3px;
+  font-family: "Open-sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
