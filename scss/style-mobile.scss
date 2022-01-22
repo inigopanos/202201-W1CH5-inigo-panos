@@ -364,5 +364,28 @@ video{
            display: none;
            background-color: yellow;
        }
+
+       .footer{
+           
+           flex-direction: row;
+           justify-content: space-between;
+
+           .footer_left{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+           }
+
+           .footer_mid{
+               text-align: center;
+               flex-direction: row;
+           }
+
+           .footer_right{
+               display: flex;
+               flex-direction: column;
+               align-content: flex-end;
+           }
+       }
     }
 }
