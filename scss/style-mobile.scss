@@ -1,8 +1,17 @@
 @media (min-width: 600px)
 {
-    header{
-        background-color: yellow;
-    }
+
+}
+
+
+.font-green{
+    color: #15FFBC;
+}
+.font-pink{
+    color:pink;
+}
+.font-white{
+    color: white;
 }
 
 %image-text{
@@ -180,6 +189,125 @@
 
         .main_div_dress-text{
             @extend %image-text;
+        }
+    }
+
+    .footer {
+        background-color: #080D14;
+        
+        @extend %image-text;
+        font-weight: normal;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        padding:50px 0px 50px 0px;
+
+        .footer_lorem-ipsum-dolor{
+            color: #15FFBC;
+        }
+
+        .footer_ipsum{
+            text-decoration-line: line-through;
+            text-decoration-color: pink;
+        }
+        .footer_lorem_X{
+            color: #15FFBC;
+            display: flex;
+            margin-top: 3rem;
+            font-size: smaller;
+            justify-content: center;
+            justify-self: center;
+        }
+
+        .footer_nav_box{
+            display: flex;
+            margin-top: 40px    ;
+            flex-direction: column;
+
+            color: white;
+
+            & > span{
+                display: flex;
+                justify-content: center;
+                font-family: "Open-sans", sans-serif;
+            }
+
+            .footer_nav_box-home{
+                color:pink;
+                text-decoration-color: pink;
+                text-decoration-line: line-through;
+            }
+        }
+
+        .footer_double_links{
+            margin: 40px 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            & > div{
+                align-items: center;
+                display: flex;
+
+                font-size: small;
+                text-transform: none;
+                letter-spacing: 5px;
+            }
+
+            .footer_double_links-first
+            {
+                display: flex;
+                flex-direction: column;
+            }
+          
+        }
+
+        .footer_social_media{
+            margin-top: 40px;   
+
+            & > p{
+                color:white;
+                font-family: "Open-sans", sans-serif;
+                display: flex;
+                text-transform: none;
+                letter-spacing: 5px;
+                justify-content: center;
+                padding-bottom: 15px;
+            }
+
+            & > nav{
+                display: flex;
+                justify-content: center;
+                align-content: space-around;
+                gap: 30px;
+
+                &  > img{
+                    width: 10%;
+                }
+                
+            }
+        }
+
+        .footer_bottom_list{
+            margin: 40px 0 20px 0;
+
+            > h3{
+                color:white;
+                font-family: "Oswald", sans-serif;
+                font-weight: normal;
+                
+                display: flex;
+                justify-content: center;
+                padding: 10px 0 10px 0;
+            }
+
+            > span{
+                display: flex;
+                justify-content: center;
+                padding: 5px 0 5px 0;
+                color: #15FFBC;
+            }
         }
     }
 }
