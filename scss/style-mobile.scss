@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+.main_nav-car-div{
+    background-color: #15FFBC;
+}
+
 .main_nav_car_image{
     width: 100%;
 }
@@ -35,7 +39,7 @@
         align-content: center;
     }
 
-    &   .header_nav-menuicon
+    & .header_nav-menuicon
     {
     display: flex;
     margin-right: 20px;
@@ -71,12 +75,14 @@
     .main_section-lorem{
         display: flex;
         flex-direction: column;
-        gap: 10px, 20px;
+        gap: 10px 20px;
         background-color: #15FFBC;
 
         & .main_section-h2{
             font-family: "Open-sans", sans-serif;
             display: flex;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             justify-content: center;
             font-weight: bold;
         }
@@ -85,6 +91,10 @@
             font-family: "Open-sans", sans-serif;
             display: flex;
             justify-content: center;
+
+            text-transform: uppercase;
+            letter-spacing: 4px;
+
             margin-bottom: 5px;
             margin-top: 5px;
         }
@@ -99,16 +109,15 @@
 
         padding: 20px 0px 20px 0px;
 
-
         .main_section_icon-curl{
-            width: 20%;
+            width: 10%;
             display: flex;   
 
             margin-top: 10px;
             margin-bottom: 10px;
         }
         .main_section_icon-cross{
-            width: 5%;
+            width: 2%;
             display: flex;
 
             margin-top: 10px;
@@ -116,4 +125,24 @@
         }
     }
 
+    .main_section_bottom-texts-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        gap: 25px;
+
+        font-family: "Open-sans", sans-serif;
+        & :nth-child(2n+1)
+        {
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        & :nth-child(2n)
+        {
+            text-decoration: underline;
+            letter-spacing: 3px;
+        }
+    }
 }
