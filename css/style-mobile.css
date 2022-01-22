@@ -1,9 +1,4 @@
-@media (min-width: 600px) {
-  header {
-    background-color: yellow;
-  }
-}
-.main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
+.main_section .footer, .main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
   letter-spacing: 3px;
   font-family: "Open-sans", sans-serif;
   font-weight: bold;
@@ -142,6 +137,45 @@
 }
 .main_section .main_div_dress {
   margin-top: 40px;
+}
+.main_section .footer {
+  background-color: #080D14;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+}
+.main_section .footer .footer_lorem-ipsum-dolor {
+  color: #15FFBC;
+}
+.main_section .footer .footer_ipsum {
+  text-decoration-line: line-through;
+  text-decoration-color: pink;
+}
+.main_section .footer .footer_lorem_X {
+  color: #15FFBC;
+  display: flex;
+  margin-top: 3rem;
+  font-size: smaller;
+  justify-content: center;
+  justify-self: center;
+}
+.main_section .footer .footer_nav_box {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  color: white;
+}
+.main_section .footer .footer_nav_box > span {
+  display: flex;
+  justify-content: center;
+  font-family: "Open-sans", sans-serif;
+}
+.main_section .footer .footer_nav_box .footer_nav_box-home {
+  color: pink;
+  text-decoration-color: pink;
+  text-decoration-line: line-through;
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
