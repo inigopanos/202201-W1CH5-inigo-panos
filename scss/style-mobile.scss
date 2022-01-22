@@ -288,5 +288,26 @@
                 
             }
         }
+
+        .footer_bottom_list{
+            margin: 40px 0 20px 0;
+
+            > h3{
+                color:white;
+                font-family: "Oswald", sans-serif;
+                font-weight: normal;
+                
+                display: flex;
+                justify-content: center;
+                padding: 10px 0 10px 0;
+            }
+
+            > span{
+                display: flex;
+                justify-content: center;
+                padding: 5px 0 5px 0;
+                color: #15FFBC;
+            }
+        }
     }
 }

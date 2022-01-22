@@ -227,5 +227,22 @@
 .main_section .footer .footer_social_media > nav > img {
   width: 10%;
 }
+.main_section .footer .footer_bottom_list {
+  margin: 40px 0 20px 0;
+}
+.main_section .footer .footer_bottom_list > h3 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.main_section .footer .footer_bottom_list > span {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 5px 0;
+  color: #15FFBC;
+}
 
 /*# sourceMappingURL=style-mobile.css.map */
