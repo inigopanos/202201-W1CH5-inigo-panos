@@ -46,7 +46,7 @@ video {
   width: 100%;
 }
 
-.header_nav, .header_nav_desktop {
+.header_nav {
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -56,10 +56,7 @@ video {
 }
 
 .header_nav_desktop {
-  background-color: #15FFBC;
-}
-.header_nav_desktop a:hover {
-  cursor: pointer;
+  display: none;
 }
 
 .header_nav {
@@ -278,6 +275,15 @@ video {
   }
   .main_section .header_nav_desktop {
     display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #15FFBC;
+  }
+  .main_section .header_nav_desktop a:hover {
+    cursor: pointer;
   }
 }
 

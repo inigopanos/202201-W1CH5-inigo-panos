@@ -56,12 +56,7 @@ video{
 }
 
 .header_nav_desktop{
-    @extend %header;
-    background-color: #15FFBC;
-
-    & a:hover{
-        cursor: pointer;
-    }
+    display: none;
 }
 
 .header_nav{
@@ -343,8 +338,18 @@ video{
             display: none;
         }
         .header_nav_desktop{
-            display: flex;
-
+           
+            display:flex;
+            flex-direction: row;
+            align-content: space-around;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            background-color: #15FFBC;
+        
+            & a:hover{
+                cursor: pointer;
+            }
         }
     }
 
