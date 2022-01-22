@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-img {
+.main_nav_car_image {
   width: 100%;
 }
 
@@ -51,11 +51,6 @@ img {
   justify-content: space-evenly;
   column-gap: 2rem;
 }
-.main_nav-lorems .main_nav.car-div {
-  display: flex;
-  flex-wrap: wrap;
-  object-fit: contain;
-}
 .main_nav-lorems .main_nav-lorem2 {
   font-weight: bold;
 }
@@ -63,26 +58,44 @@ img {
 .main_section {
   background-color: #15FFBC;
 }
-.main_section .main_section-lorems {
+.main_section .main_section-lorem {
   display: flex;
   flex-direction: column;
+  gap: 10px, 20px;
+  background-color: #15FFBC;
 }
-.main_section .main_section-h2 {
+.main_section .main_section-lorem .main_section-h2 {
   font-family: "Open-sans", sans-serif;
+  display: flex;
+  justify-content: center;
   font-weight: bold;
 }
-.main_section .main_section-lorem_text {
+.main_section .main_section-lorem .main_section-lorem_text {
   font-family: "Open-sans", sans-serif;
-  column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-.main_section .main_section_icon-container {
-  height: 20px;
-  width: 20px;
+.main_section .main_section-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0px 20px 0px;
 }
-.main_section .main_section_icon-curl {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
+.main_section .main_section-icons-container .main_section_icon-curl {
+  width: 20%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main_section .main_section-icons-container .main_section_icon-cross {
+  width: 5%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
