@@ -138,7 +138,7 @@ video{
         align-items:center;
         gap:50px;
 
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 10px 0px;
 
         .main_section_icon-curl{
             width: 10%;
@@ -350,6 +350,14 @@ video{
             & a:hover{
                 cursor: pointer;
             }
+        }
+
+        .main_div_images{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            gap: 40px;
         }
     }
 
