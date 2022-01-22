@@ -30,6 +30,10 @@ video{
     display: none;
 }
 
+.header_nav_desktop{
+    display: none;   
+}
+
 .main_car-nav-image{
     width: 100%;
 }
@@ -49,6 +53,15 @@ video{
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+.header_nav_desktop{
+    @extend %header;
+    background-color: #15FFBC;
+
+    & a:hover{
+        cursor: pointer;
+    }
 }
 
 .header_nav{
@@ -324,6 +337,14 @@ video{
         }
         .main_nav-car-div{
             display: none;
+        }
+
+        .header_nav{
+            display: none;
+        }
+        .header_nav_desktop{
+            display: flex;
+
         }
     }
 

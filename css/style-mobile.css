@@ -30,6 +30,10 @@ video {
   display: none;
 }
 
+.header_nav_desktop {
+  display: none;
+}
+
 .main_car-nav-image {
   width: 100%;
 }
@@ -42,13 +46,20 @@ video {
   width: 100%;
 }
 
-.header_nav {
+.header_nav, .header_nav_desktop {
   display: flex;
   flex-direction: row;
   align-content: space-around;
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.header_nav_desktop {
+  background-color: #15FFBC;
+}
+.header_nav_desktop a:hover {
+  cursor: pointer;
 }
 
 .header_nav {
@@ -261,6 +272,12 @@ video {
   }
   .main_section .main_nav-car-div {
     display: none;
+  }
+  .main_section .header_nav {
+    display: none;
+  }
+  .main_section .header_nav_desktop {
+    display: flex;
   }
 }
 
