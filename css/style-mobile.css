@@ -3,6 +3,16 @@
     background-color: yellow;
   }
 }
+.main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
+  letter-spacing: 3px;
+  font-family: "Open-sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -127,14 +137,11 @@
 .main_section .main_div_cover-letter {
   margin-top: 40px;
 }
-.main_section .main_div_cover-letter-text {
-  letter-spacing: 3px;
-  font-family: "Open-sans", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0px 20px 0px;
+.main_section .main_div_pizza {
+  margin-top: 40px;
+}
+.main_section .main_div_dress {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
