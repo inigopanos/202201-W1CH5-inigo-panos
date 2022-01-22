@@ -23,6 +23,7 @@
 .header_nav{
     @extend %header;
     background-color: #15FFBC;
+    gap: 80px;
 
     & a{
         font-family: "Oswald", sans-serif;
@@ -30,8 +31,32 @@
         align-content: center;
     }
 
-    .header_nav-logo{
+    &   .header_nav-menuicon
+    {
+    display: flex;
+    margin-right: 20px;
+    }
+
+    & .header_nav-logo{
         justify-content: center;
         margin:20px;
+    }
+
+    & .header_nav-qui{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+}
+
+.main_nav-lorems{
+    display: flex; 
+    align-content: center;
+    justify-content: center;
+
+
+    .main_nav-lorem2
+    {
+        font-weight: bold;
     }
 }
