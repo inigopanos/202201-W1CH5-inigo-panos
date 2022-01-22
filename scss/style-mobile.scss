@@ -3,6 +3,17 @@
 
 }
 
+
+.font-green{
+    color: #15FFBC;
+}
+.font-pink{
+    color:pink;
+}
+.font-white{
+    color: white;
+}
+
 %image-text{
     letter-spacing: 3px;
     font-family: "Open-sans", sans-serif;
@@ -227,6 +238,29 @@
                 text-decoration-color: pink;
                 text-decoration-line: line-through;
             }
+        }
+
+        .footer_double_links{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            & > div{
+                align-items: center;
+                display: flex;
+
+                font-size: small;
+                text-transform: none;
+                letter-spacing: 5px;
+            }
+
+            .footer_double_links-first
+            {
+                display: flex;
+                flex-direction: column;
+            }
+          
         }
     }
 }

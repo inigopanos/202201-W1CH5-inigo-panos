@@ -1,3 +1,15 @@
+.font-green {
+  color: #15FFBC;
+}
+
+.font-pink {
+  color: pink;
+}
+
+.font-white {
+  color: white;
+}
+
 .main_section .footer, .main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
   letter-spacing: 3px;
   font-family: "Open-sans", sans-serif;
@@ -176,6 +188,23 @@
   color: pink;
   text-decoration-color: pink;
   text-decoration-line: line-through;
+}
+.main_section .footer .footer_double_links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main_section .footer .footer_double_links > div {
+  align-items: center;
+  display: flex;
+  font-size: small;
+  text-transform: none;
+  letter-spacing: 5px;
+}
+.main_section .footer .footer_double_links .footer_double_links-first {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
