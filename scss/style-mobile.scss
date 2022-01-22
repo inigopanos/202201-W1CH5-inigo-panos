@@ -5,10 +5,28 @@
     }
 }
 
+%image-text{
+    letter-spacing: 3px;
+    font-family: "Open-sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.main_nav-car-div{
+    background-color: #15FFBC;
+}
+
+.content-image{
+    width: 100%;
 }
 
 %header{
@@ -23,6 +41,7 @@
 .header_nav{
     @extend %header;
     background-color: #15FFBC;
+    gap: 80px;
 
     & a{
         font-family: "Oswald", sans-serif;
@@ -30,8 +49,137 @@
         align-content: center;
     }
 
-    .header_nav-logo{
+    & .header_nav-menuicon
+    {
+    display: flex;
+    margin-right: 20px;
+    }
+
+    & .header_nav-logo{
         justify-content: center;
         margin:20px;
+    }
+
+    & .header_nav-qui{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+}
+
+.main_nav-lorems{
+    display: flex; 
+    align-content: space-between;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+
+    .main_nav-lorem2
+    {
+        font-weight: bold;
+    }
+}
+
+.main_section{
+    background-color: #15FFBC;
+    
+    .main_section-lorem{
+        display: flex;
+        flex-direction: column;
+        gap: 10px 20px;
+        background-color: #15FFBC;
+
+        & .main_section-h2{
+            font-family: "Open-sans", sans-serif;
+            display: flex;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        &   .main_section-lorem_text{
+            font-family: "Open-sans", sans-serif;
+            display: flex;
+            justify-content: center;
+
+            text-transform: uppercase;
+            letter-spacing: 4px;
+
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    } 
+
+    .main_section-icons-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        gap:50px;
+
+        padding: 20px 0px 20px 0px;
+
+        .main_section_icon-curl{
+            width: 10%;
+            display: flex;   
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .main_section_icon-cross{
+            width: 2%;
+            display: flex;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main_section_bottom-texts-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        font-family: "Open-sans", sans-serif;
+        & :nth-child(2n+1)
+        {
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        & :nth-child(2n)
+        {
+            text-decoration: underline;
+            letter-spacing: 3px;
+        }
+    }
+
+    .main_div_cover-letter{
+        margin-top: 40px;
+
+        .main_div_cover-letter-text{
+           @extend %image-text;
+        }
+    
+    }
+
+    .main_div_pizza{
+        margin-top: 40px;
+        
+        .main_div_pizza-text{
+            @extend %image-text;
+        }
+    }
+
+    .main_div_dress{
+        margin-top:40px;
+
+        .main_div_dress-text{
+            @extend %image-text;
+        }
     }
 }
