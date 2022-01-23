@@ -251,6 +251,7 @@ video {
 .footer .footer_bottom_list > h3 {
   color: white;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
   font-weight: normal;
   text-transform: none;
   display: flex;
@@ -263,6 +264,8 @@ video {
   text-transform: none;
   padding: 5px 0 5px 0;
   color: #15FFBC;
+  font-family: "Open-sans", sans-serif;
+  letter-spacing: 5px;
 }
 
 @media (min-width: 600px) {
@@ -334,10 +337,16 @@ video {
   .footer_section_all .footer_bottom_list .footer_bottom_list-header {
     text-align: right;
   }
+  .footer_section_all .footer_bottom_list > h3 {
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 5px;
+  }
   .footer_section_all .footer_bottom_list > span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 5px;
   }
   .footer_section_all .footer_bottom_list > span:hover {
     cursor: pointer;

@@ -311,11 +311,13 @@ video{
         > h3{
             color:white;
             font-family: "Oswald", sans-serif;
+            letter-spacing: 5px;
             font-weight: normal;
             text-transform: none;
             display: flex;
             justify-content: center;
             padding: 10px 0 10px 0;
+            
         }
 
         > span{
@@ -324,6 +326,9 @@ video{
             text-transform: none;
             padding: 5px 0 5px 0;
             color: #15FFBC;
+            
+            font-family: "Open-sans", sans-serif;
+            letter-spacing: 5px;
         }
     }
 }
@@ -407,10 +412,16 @@ video{
             {  
                 text-align: right;
             }
+            & > h3{
+                font-family: "Open-sans", sans-serif;
+                letter-spacing: 5px;
+            }
             & > span{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                font-family: "Open-sans", sans-serif;
+                letter-spacing: 5px;
             } 
             & > span:hover{
                 cursor: pointer;
