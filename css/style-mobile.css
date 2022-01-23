@@ -298,13 +298,6 @@ video {
   letter-spacing: 5px;
 }
 
-.work_image_div > img {
-  width: 100%;
-}
-.work_image_div > img img:hover {
-  cursor: pointer;
-}
-
 @media (min-width: 600px) {
   .video {
     display: flex;
@@ -421,21 +414,26 @@ video {
   .work_main_images {
     background-color: #15FFBC;
   }
-
-  .work_image_div {
+  .work_main_images > div {
+    width: 100%;
+  }
+  .work_main_images .work_image_div {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 35vw;
+    height: 30vw;
   }
-  .work_image_div > img {
-    width: 100%;
-    transition: transform 0.3s;
+  .work_main_images .work_image_div > .work_image_div-img {
+    float: left;
+    width: 17.11rem;
+    height: 15.67rem;
+    object-fit: cover;
   }
-  .work_image_div img:hover {
+
+  .work_image_div-img:hover {
     cursor: pointer;
-    opacity: 0.3;
-    transform: scale(1.2);
+    transition: transform, 0.3s;
+    transform: scale(1.1);
   }
 }
 
