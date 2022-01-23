@@ -523,7 +523,8 @@ video{
   
         & > img{
         width: 100%;
-        transition: transform .3s
+        transition: transform .3s;
+        
         }
         & img:hover{
             cursor: pointer;
