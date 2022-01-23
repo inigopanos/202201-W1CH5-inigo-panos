@@ -24,6 +24,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .about_header_image {
@@ -220,6 +222,11 @@ video {
 .footer .footer_nav_box {
   margin-top: 40px;
   color: white;
+}
+.footer .footer_nav_box > a {
+  display: flex;
+  justify-content: center;
+  font-family: "Open-sans", sans-serif;
 }
 .footer .footer_nav_box > span {
   display: flex;
