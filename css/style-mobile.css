@@ -130,6 +130,7 @@ video {
 .main_section .main_section-lorem .main_section-lorem_text {
   font-family: "Open-sans", sans-serif;
   display: flex;
+  text-align: center;
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -387,6 +388,7 @@ video {
   .main_section_about_blocks > div {
     flex-direction: column;
     text-align: center;
+    margin: 0 15px 0 15px;
   }
   .main_section_about_blocks > div > p {
     letter-spacing: 2px;
