@@ -497,5 +497,16 @@ video{
         }
     }
     
-   
+   //////////////////////////////////////////////////////////////////////////////////
+    .work_main_images{
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        & > div {
+            &> img{
+            height: 35vw;
+            width: 100%;
+            }
+        }
+    }
 }
