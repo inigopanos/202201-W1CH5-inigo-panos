@@ -24,6 +24,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.about_header_image {
+  display: none;
 }
 
 video {
@@ -32,6 +38,9 @@ video {
 
 .header_nav_desktop {
   display: none;
+}
+.header_nav_desktop > li {
+  list-style-type: none;
 }
 
 .main_car-nav-image {
@@ -95,6 +104,21 @@ video {
 .main_section {
   background-color: #15FFBC;
 }
+.main_section .main_section_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Open-sans", sans-serif;
+  letter-spacing: 5px;
+  margin: 100px 0 20px 0;
+}
+.main_section .main_section_about > h2 {
+  margin: 10px 0 40px 0;
+}
+.main_section .main_section_about > p {
+  padding: 5px 0 5px 0;
+}
 .main_section .main_section-lorem {
   display: flex;
   flex-direction: column;
@@ -112,6 +136,7 @@ video {
 .main_section .main_section-lorem .main_section-lorem_text {
   font-family: "Open-sans", sans-serif;
   display: flex;
+  text-align: center;
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -197,6 +222,11 @@ video {
 .footer .footer_nav_box {
   margin-top: 40px;
   color: white;
+}
+.footer .footer_nav_box > a {
+  display: flex;
+  justify-content: center;
+  font-family: "Open-sans", sans-serif;
 }
 .footer .footer_nav_box > span {
   display: flex;
@@ -306,6 +336,10 @@ video {
     display: none;
   }
 
+  .svg-icon:hover {
+    fill: pink;
+  }
+
   .footer_section_all {
     display: flex;
     align-content: space-between;
@@ -354,6 +388,27 @@ video {
   .footer_section_all .footer_bottom_list > span:hover {
     cursor: pointer;
     color: pink;
+  }
+
+  .about_header_image {
+    display: flex;
+    width: 100%;
+    height: 50vw;
+  }
+
+  .main_section_about_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  .main_section_about_blocks > div {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+  .main_section_about_blocks > div > p {
+    letter-spacing: 2px;
   }
 }
 
