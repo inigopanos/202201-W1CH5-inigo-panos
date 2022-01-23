@@ -426,11 +426,11 @@ video {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 35vw;
+    height: 34vw;
   }
   .work_image_div > img {
-    width: 100%;
-    transition: transform 0.3s;
+    height: 34vw;
+    width: 34vw;
   }
   .work_image_div img:hover {
     cursor: pointer;

@@ -519,11 +519,11 @@ video{
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 35vw;
+        height: 34vw;
   
         & > img{
-        width: 100%;
-        transition: transform .3s;
+        height: 34vw;
+        width: 34vw;
         
         }
         & img:hover{
