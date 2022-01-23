@@ -31,7 +31,11 @@ video{
 }
 
 .header_nav_desktop{
-    display: none;   
+    display: none; 
+    
+    & > li{
+        list-style-type: none;
+    }
 }
 
 .main_car-nav-image{
@@ -103,6 +107,13 @@ video{
 .main_section{
     background-color: #15FFBC;
     
+    .main_section_about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .main_section-lorem{
         display: flex;
         flex-direction: column;
