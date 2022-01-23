@@ -430,7 +430,7 @@ video {
   }
   .work_image_div > img {
     width: 100%;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
   }
   .work_image_div img:hover {
     cursor: pointer;
