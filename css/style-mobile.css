@@ -10,7 +10,7 @@
   color: white;
 }
 
-.main_section .footer, .main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
+.main_section .main_div_dress .main_div_dress-text, .main_section .main_div_pizza .main_div_pizza-text, .main_section .main_div_cover-letter .main_div_cover-letter-text {
   letter-spacing: 3px;
   font-family: "Open-sans", sans-serif;
   font-weight: bold;
@@ -24,6 +24,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+video {
+  display: none;
+}
+
+.header_nav_desktop {
+  display: none;
+}
+
+.main_car-nav-image {
+  width: 100%;
 }
 
 .main_nav-car-div {
@@ -41,6 +53,10 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.header_nav_desktop {
+  display: none;
 }
 
 .header_nav {
@@ -108,7 +124,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 10px 0px;
 }
 .main_section .main_section-icons-container .main_section_icon-curl {
   width: 10%;
@@ -133,7 +149,7 @@
 }
 .main_section .main_section_bottom-texts-container :nth-child(2n+1) {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -150,22 +166,27 @@
 .main_section .main_div_dress {
   margin-top: 40px;
 }
-.main_section .footer {
+.footer {
   background-color: #080D14;
   font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 50px 0px 50px 0px;
 }
-.main_section .footer .footer_lorem-ipsum-dolor {
+.footer .footer_header {
   color: #15FFBC;
 }
-.main_section .footer .footer_ipsum {
-  text-decoration-line: line-through;
+.footer .footer_header .footer_header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footer .footer_header .footer_ipsum {
+  color: pink;
+  text-decoration: line-through;
   text-decoration-color: pink;
 }
-.main_section .footer .footer_lorem_X {
+.footer .footer_header .footer_lorem_X {
   color: #15FFBC;
   display: flex;
   margin-top: 3rem;
@@ -173,43 +194,40 @@
   justify-content: center;
   justify-self: center;
 }
-.main_section .footer .footer_nav_box {
-  display: flex;
+.footer .footer_nav_box {
   margin-top: 40px;
-  flex-direction: column;
   color: white;
 }
-.main_section .footer .footer_nav_box > span {
+.footer .footer_nav_box > span {
   display: flex;
   justify-content: center;
   font-family: "Open-sans", sans-serif;
 }
-.main_section .footer .footer_nav_box .footer_nav_box-home {
+.footer .footer_nav_box .footer_nav_box-home {
   color: pink;
   text-decoration-color: pink;
   text-decoration-line: line-through;
 }
-.main_section .footer .footer_double_links {
+.footer .footer_double_links {
   margin: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.main_section .footer .footer_double_links > div {
+.footer .footer_double_links > div, .footer .footer_double_links h3 {
   align-items: center;
   display: flex;
-  font-size: small;
   text-transform: none;
   letter-spacing: 5px;
 }
-.main_section .footer .footer_double_links .footer_double_links-first {
+.footer .footer_double_links .footer_double_links-first {
   display: flex;
   flex-direction: column;
 }
-.main_section .footer .footer_social_media {
+.footer .footer_social_media {
   margin-top: 40px;
 }
-.main_section .footer .footer_social_media > p {
+.footer .footer_social_media > h3 {
   color: white;
   font-family: "Open-sans", sans-serif;
   display: flex;
@@ -218,31 +236,125 @@
   justify-content: center;
   padding-bottom: 15px;
 }
-.main_section .footer .footer_social_media > nav {
+.footer .footer_social_media > nav {
   display: flex;
   justify-content: center;
   align-content: space-around;
   gap: 30px;
 }
-.main_section .footer .footer_social_media > nav > img {
+.footer .footer_social_media > nav > img {
   width: 10%;
 }
-.main_section .footer .footer_bottom_list {
+.footer .footer_bottom_list {
   margin: 40px 0 20px 0;
 }
-.main_section .footer .footer_bottom_list > h3 {
+.footer .footer_bottom_list > h3 {
   color: white;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
   font-weight: normal;
+  text-transform: none;
   display: flex;
   justify-content: center;
   padding: 10px 0 10px 0;
 }
-.main_section .footer .footer_bottom_list > span {
+.footer .footer_bottom_list > span {
   display: flex;
   justify-content: center;
+  text-transform: none;
   padding: 5px 0 5px 0;
   color: #15FFBC;
+  font-family: "Open-sans", sans-serif;
+  letter-spacing: 5px;
+}
+
+@media (min-width: 600px) {
+  .video {
+    display: flex;
+    width: 100%;
+  }
+
+  .main_nav-car-div {
+    display: none;
+  }
+
+  .header_nav {
+    display: none;
+  }
+
+  .header_nav_desktop {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #15FFBC;
+  }
+  .header_nav_desktop a:hover {
+    cursor: pointer;
+  }
+
+  .main_div_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer > ul {
+    display: none;
+  }
+
+  .footer_section_all {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer_section_all .footer_double_links {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+  .footer_section_all .footer_double_links > h3 {
+    font-family: "Open-sans", sans-serif;
+  }
+  .footer_section_all .footer_double_links > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Open-sans", sans-serif;
+  }
+  .footer_section_all .footer_double_links .p1:hover {
+    cursor: pointer;
+    color: pink;
+  }
+  .footer_section_all .footer_mid {
+    margin-right: 4rem;
+  }
+  .footer_section_all .footer_mid > nav > img:hover {
+    cursor: pointer;
+  }
+  .footer_section_all .footer_bottom_list .footer_bottom_list-header {
+    text-align: right;
+  }
+  .footer_section_all .footer_bottom_list > h3 {
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 5px;
+  }
+  .footer_section_all .footer_bottom_list > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Open-sans", sans-serif;
+    letter-spacing: 5px;
+  }
+  .footer_section_all .footer_bottom_list > span:hover {
+    cursor: pointer;
+    color: pink;
+  }
 }
 
 /*# sourceMappingURL=style-mobile.css.map */
