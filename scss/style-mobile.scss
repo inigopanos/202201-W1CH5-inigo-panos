@@ -210,28 +210,28 @@ video{
         
         @extend %image-text;
         font-weight: normal;
-        display: flex;
-        flex-direction: column;
        
-        align-items: center;
         padding:50px 0px 50px 0px;
 
         .footer_lorem-ipsum-dolor{
             color: #15FFBC;
+
+            .footer_ipsum{
+                text-decoration-line: line-through;
+                text-decoration-color: pink;
+                
+            }
+            .footer_lorem_X{
+                color: #15FFBC;
+                display: flex;
+                margin-top: 3rem;
+                font-size: smaller;
+                justify-content: center;
+                justify-self: center;
+            }
         }
 
-        .footer_ipsum{
-            text-decoration-line: line-through;
-            text-decoration-color: pink;
-        }
-        .footer_lorem_X{
-            color: #15FFBC;
-            display: flex;
-            margin-top: 3rem;
-            font-size: smaller;
-            justify-content: center;
-            justify-self: center;
-        }
+       
 
         .footer_nav_box{
             
