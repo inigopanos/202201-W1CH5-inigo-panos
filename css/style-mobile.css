@@ -301,26 +301,29 @@ video {
 
   .footer > ul {
     display: none;
-    background-color: yellow;
   }
 
-  .footer {
-    flex-direction: row;
-    justify-content: space-between;
+  .footer .footer_section_all {
+    display: flex;
+    align-content: center;
   }
-  .footer .footer_left {
+  .footer .footer_section_all .footer_left .footer_double_links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: space-between;
   }
-  .footer .footer_mid {
-    text-align: center;
-    flex-direction: row;
+  .footer .footer_section_all .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
   }
-  .footer .footer_right {
+  .footer .footer_section_all .footer_right .footer_bottom_list > span {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
+    align-items: flex-end;
   }
 }
 
