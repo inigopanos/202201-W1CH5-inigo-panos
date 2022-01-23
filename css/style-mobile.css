@@ -102,7 +102,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   font-family: "Open-sans", sans-serif;
   letter-spacing: 5px;
   margin: 100px 0 20px 0;
@@ -376,6 +376,20 @@ video {
   .footer_section_all .footer_bottom_list > span:hover {
     cursor: pointer;
     color: pink;
+  }
+
+  .main_section_about_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  .main_section_about_blocks > div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main_section_about_blocks > div > p {
+    letter-spacing: 2px;
   }
 }
 
