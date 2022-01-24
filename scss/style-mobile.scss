@@ -78,17 +78,17 @@ video {
         align-content: center;
     }
 
-    & .header_nav-menuicon {
+    &-menuicon {
         display: flex;
         margin-right: 20px;
     }
 
-    & .header_nav-logo {
+    &-logo {
         justify-content: center;
         margin: 20px;
     }
 
-    & .header_nav-qui {
+    &-qui {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
@@ -101,7 +101,7 @@ video {
     justify-content: space-evenly;
     column-gap: 2rem;
 
-    & .main_nav-lorem2 {
+    &-lorem2 {
         font-weight: bold;
     }
 }
@@ -109,7 +109,7 @@ video {
 .main_section {
     background-color: #15ffbc;
 
-    & .main_section_about {
+    &_about {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,14 +127,14 @@ video {
         }
     }
 
-    & .main_section-lorem {
+    &-lorem {
         display: flex;
         flex-direction: column;
         gap: 10px 20px;
 
         background-color: #15ffbc;
 
-        & .main_section-h2 {
+        &-h2 {
             font-family: "Open-sans", sans-serif;
             display: flex;
             padding-top: 2rem;
@@ -143,7 +143,7 @@ video {
             font-weight: bold;
         }
 
-        & .main_section-lorem_text {
+        &_text {
             font-family: "Open-sans", sans-serif;
             display: flex;
             text-align: center;
@@ -157,7 +157,7 @@ video {
         }
     }
 
-    & .main_section-icons-container {
+    &-icons-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -166,14 +166,14 @@ video {
 
         padding: 20px 0px 10px 0px;
 
-        & .main_section_icon-curl {
+        &_icon-curl {
             width: 10%;
             display: flex;
 
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        & .main_section_icon-cross {
+        &_icon-cross {
             width: 2%;
             display: flex;
 
@@ -182,7 +182,7 @@ video {
         }
     }
 
-    & .main_section_bottom-texts-container {
+    &_bottom-texts-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -203,26 +203,26 @@ video {
         }
     }
 
-    & .main_div_cover-letter {
+    .main_div_cover-letter {
         margin-top: 40px;
 
-        & .main_div_cover-letter-text {
+        &-text {
             @extend %image-text;
         }
     }
 
-    & .main_div_pizza {
+    .main_div_pizza {
         margin-top: 40px;
 
-        & .main_div_pizza-text {
+        &-text {
             @extend %image-text;
         }
     }
 
-    & .main_div_dress {
+    .main_div_dress {
         margin-top: 40px;
 
-        & .main_div_dress-text {
+        &-text {
             @extend %image-text;
         }
     }
@@ -234,22 +234,22 @@ video {
 
     padding: 50px 0px 50px 0px;
 
-    & .footer_header {
+    &_header {
         color: #15ffbc;
 
-        & .footer_header-title {
+        &-title {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             align-content: center;
         }
-        & .footer_ipsum {
+        .footer_ipsum {
             color: pink;
             text-decoration: line-through;
             text-decoration-color: pink;
         }
-        & .footer_lorem_X {
+        .footer_lorem_X {
             color: #15ffbc;
             display: flex;
             margin-top: 3rem;
@@ -259,7 +259,7 @@ video {
         }
     }
 
-    & .footer_nav_box {
+    &_nav_box {
         margin-top: 40px;
 
         color: white;
@@ -275,14 +275,14 @@ video {
             font-family: "Open-sans", sans-serif;
         }
 
-        & .footer_nav_box-home {
+        &-home {
             color: pink;
             text-decoration-color: pink;
             text-decoration-line: line-through;
         }
     }
 
-    & .footer_double_links {
+    &_double_links {
         margin: 40px 0 20px 20px;
         display: flex;
         flex-direction: column;
@@ -296,13 +296,13 @@ video {
             letter-spacing: 5px;
         }
 
-        & .footer_double_links-first {
+        &-first {
             display: flex;
             flex-direction: column;
         }
     }
 
-    & .footer_social_media {
+    &_social_media {
         margin-top: 40px;
 
         & > h3 {
@@ -327,7 +327,7 @@ video {
         }
     }
 
-    & .footer_bottom_list {
+    &_bottom_list {
         margin: 40px 0 20px 0;
 
         & > h3 {
@@ -443,7 +443,7 @@ video {
 
         & .footer_bottom_list {
             margin: 0 20px 0 20px;
-            & .footer_bottom_list-header {
+            &-header {
                 text-align: right;
             }
             & > h3 {
